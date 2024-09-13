@@ -1,0 +1,13 @@
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.suo
+*.log
+*.vs/
+*.vscode/
+*.DS_Store
+wwwroot/dist/
+node_modules/
+*.env

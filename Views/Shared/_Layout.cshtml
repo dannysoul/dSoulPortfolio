@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - dSoul's Portfolio</title>
+    <link rel="stylesheet" href="/dist/css/tailwind.css" />
+    <link rel="stylesheet" href="/dist/css/main.css" />
+</head>
+<body class="bg-gray-100 text-gray-900 min-h-screen flex flex-col">
+    <!-- Header -->
+    @await Html.PartialAsync("_Header")
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+        @RenderBody()
+    </main>
+
+    <!-- Footer -->
+    @await Html.PartialAsync("_Footer")
+</body>
+</html>
